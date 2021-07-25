@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B40F5B726AD8B1100376C98 /* StateText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B40F5B626AD8B1100376C98 /* StateText.swift */; };
 		1B671E3A2698A8C900D99281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B671E392698A8C900D99281 /* AppDelegate.swift */; };
 		1B671E3C2698A8C900D99281 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B671E3B2698A8C900D99281 /* SceneDelegate.swift */; };
 		1B671E3E2698A8C900D99281 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B671E3D2698A8C900D99281 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B40F5B626AD8B1100376C98 /* StateText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateText.swift; sourceTree = "<group>"; };
 		1B671E362698A8C900D99281 /* NBA Player Fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA Player Fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B671E392698A8C900D99281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B671E3B2698A8C900D99281 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				1B671E442698A8CC00D99281 /* LaunchScreen.storyboard */,
 				1B671E472698A8CC00D99281 /* Info.plist */,
 				1B671E412698A8CC00D99281 /* Preview Content */,
+				1B40F5B626AD8B1100376C98 /* StateText.swift */,
 			);
 			path = "NBA Player Fun";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B40F5B726AD8B1100376C98 /* StateText.swift in Sources */,
 				1B671E3A2698A8C900D99281 /* AppDelegate.swift in Sources */,
 				1B671E3C2698A8C900D99281 /* SceneDelegate.swift in Sources */,
 				1B671E3E2698A8C900D99281 /* ContentView.swift in Sources */,
