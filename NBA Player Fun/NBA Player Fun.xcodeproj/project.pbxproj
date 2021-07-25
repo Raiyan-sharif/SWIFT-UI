@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1B40F5B726AD8B1100376C98 /* StateText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B40F5B626AD8B1100376C98 /* StateText.swift */; };
+		1B40F5BA26AD8E1600376C98 /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B40F5B926AD8E1600376C98 /* PlayerRow.swift */; };
+		1B40F5BD26AD901300376C98 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B40F5BC26AD901300376C98 /* Player.swift */; };
+		1B40F5C026AD99BD00376C98 /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B40F5BF26AD99BD00376C98 /* PlayerList.swift */; };
 		1B671E3A2698A8C900D99281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B671E392698A8C900D99281 /* AppDelegate.swift */; };
 		1B671E3C2698A8C900D99281 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B671E3B2698A8C900D99281 /* SceneDelegate.swift */; };
 		1B671E3E2698A8C900D99281 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B671E3D2698A8C900D99281 /* ContentView.swift */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		1B40F5B626AD8B1100376C98 /* StateText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateText.swift; sourceTree = "<group>"; };
+		1B40F5B926AD8E1600376C98 /* PlayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
+		1B40F5BC26AD901300376C98 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = "Player Info/Player.swift"; sourceTree = SOURCE_ROOT; };
+		1B40F5BF26AD99BD00376C98 /* PlayerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerList.swift; sourceTree = "<group>"; };
 		1B671E362698A8C900D99281 /* NBA Player Fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA Player Fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B671E392698A8C900D99281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B671E3B2698A8C900D99281 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,7 @@
 		1B671E382698A8C900D99281 /* NBA Player Fun */ = {
 			isa = PBXGroup;
 			children = (
+				1B40F5BC26AD901300376C98 /* Player.swift */,
 				1B671E392698A8C900D99281 /* AppDelegate.swift */,
 				1B671E3B2698A8C900D99281 /* SceneDelegate.swift */,
 				1B671E3D2698A8C900D99281 /* ContentView.swift */,
@@ -66,6 +73,8 @@
 				1B671E472698A8CC00D99281 /* Info.plist */,
 				1B671E412698A8CC00D99281 /* Preview Content */,
 				1B40F5B626AD8B1100376C98 /* StateText.swift */,
+				1B40F5B926AD8E1600376C98 /* PlayerRow.swift */,
+				1B40F5BF26AD99BD00376C98 /* PlayerList.swift */,
 			);
 			path = "NBA Player Fun";
 			sourceTree = "<group>";
@@ -151,6 +160,9 @@
 				1B40F5B726AD8B1100376C98 /* StateText.swift in Sources */,
 				1B671E3A2698A8C900D99281 /* AppDelegate.swift in Sources */,
 				1B671E3C2698A8C900D99281 /* SceneDelegate.swift in Sources */,
+				1B40F5BA26AD8E1600376C98 /* PlayerRow.swift in Sources */,
+				1B40F5BD26AD901300376C98 /* Player.swift in Sources */,
+				1B40F5C026AD99BD00376C98 /* PlayerList.swift in Sources */,
 				1B671E3E2698A8C900D99281 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
