@@ -19,12 +19,14 @@ struct ContentView: View {
             
             Image(player.imageName).clipShape(Circle()).background(Circle()).foregroundColor(.white).overlay(Circle().stroke(Color.white,lineWidth: 4)).offset(x:0, y: -90).padding(.bottom,-90).shadow(radius: 30 )
             
-            Text(player.height).font(.system(size: 40))
-                .fontWeight(.heavy)
+            Text(player.name).font(.system(size: 40))
+                .fontWeight(.heavy).lineLimit(1).minimumScaleFactor(0.5)
+            
             StateText(stateName: "Age", stateValue: "\(player.age)")
             StateText(stateName: "Height", stateValue: player.height)
             StateText(stateName: "Weight", stateValue: "\(player.weight)lbs")
             Spacer()
+                
                 
         }.edgesIgnoringSafeArea(.top)
         

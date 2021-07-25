@@ -13,8 +13,8 @@ struct StateText: View {
     
     var body: some View {
         HStack{
-            Text(stateName+":").font(.system(size: 45)).fontWeight(.bold).padding(.leading,30)
-            Text(stateValue).font(.system(size: 45)).fontWeight(.light).padding(.trailing,30)
+            Text(stateName+":").font(.system(size: 45)).fontWeight(.bold).padding(.leading,30).minimumScaleFactor(0.5)
+            Text(stateValue).font(.system(size: 45)).fontWeight(.light).padding(.trailing,30).minimumScaleFactor(0.5)
             Spacer()
         }
     }
