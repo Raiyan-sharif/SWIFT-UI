@@ -25,7 +25,8 @@ struct ContentView: View {
                 Text("Tap Me")
                 Image(systemName: "gamecontroller")
             }
-        })
+        }
+        ).padding().background(Color.blue).cornerRadius(10).foregroundColor(.white)
     }
 }
 
