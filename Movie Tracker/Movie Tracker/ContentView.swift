@@ -9,8 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+//        HStack (){
+//            Text("Hello").font(.largeTitle)
+//            Image(systemName: "lightbulb")
+//            Text("Good by").lineLimit(1)
+//        }
+//        Button(action: {
+//            print("Hello")
+//        }, label: {
+//            Text("Tap")
+//        })
+        
+        Button(action: {}, label: {
+            HStack{
+                Text("Tap Me")
+                Image(systemName: "gamecontroller")
+            }
+        })
     }
 }
 
