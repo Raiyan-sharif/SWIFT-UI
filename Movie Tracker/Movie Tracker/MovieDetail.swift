@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MovieDetail.swift
 //  Movie Tracker
 //
 //  Created by raiyan sharif on 7/8/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MovieDetail: View {
     @State var title = ""
     @State var rating = 3.0
     @State var seen = false
@@ -34,10 +34,11 @@ struct ContentView: View {
         
         List {
             Section{
+            Text("Title").font(.caption).foregroundColor(.green)
             TextField("Movie Title", text: $title)
             }
             Section{
-                Text("Rating").font(.caption).foregroundColor(.gray)
+                Text("Rating").font(.caption).foregroundColor(.green)
                 HStack{
                     Spacer()
                     Text(String(repeating: "⭐️", count: Int(rating))).foregroundColor(.yellow).font(.title)
@@ -46,6 +47,7 @@ struct ContentView: View {
                 Slider(value: $rating, in: 0...5,step: 1.0)
             }
             Section{
+                Text("Seen").font(.caption).foregroundColor(.green)
                 Toggle(isOn: $seen, label: {
                     if title == ""{
                         Text("Has Seen this movie")
@@ -71,6 +73,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MovieDetail()
     }
 }
