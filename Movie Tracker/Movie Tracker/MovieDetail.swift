@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct MovieDetail: View {
-    @State var title = ""
-    @State var rating = 3.0
-    @State var seen = false
+    @State var movie: Movie
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var movieStorage: MovieStorage
+    let newMovie: Bool
+    
     var body: some View {
 //        HStack (){
 //            Text("Hello").font(.largeTitle)
@@ -35,36 +37,49 @@ struct MovieDetail: View {
         List {
             Section{
             Text("Title").font(.caption).foregroundColor(.green)
-            TextField("Movie Title", text: $title)
+                TextField("Movie Title", text: $movie.title)
             }
             Section{
                 Text("Rating").font(.caption).foregroundColor(.green)
                 HStack{
                     Spacer()
-                    Text(String(repeating: "⭐️", count: Int(rating))).foregroundColor(.yellow).font(.title)
+                    Text(String(repeating: "⭐️", count: Int(movie.rating))).foregroundColor(.yellow).font(.title)
                     Spacer()
                 }
-                Slider(value: $rating, in: 0...5,step: 1.0)
+                Slider(value: $movie.rating, in: 0...5,step: 1.0)
             }
             Section{
                 Text("Seen").font(.caption).foregroundColor(.green)
-                Toggle(isOn: $seen, label: {
-                    if title == ""{
+                Toggle(isOn: $movie.seen, label: {
+                    if movie.title == ""{
                         Text("Has Seen this movie")
                     }
                     else{
-                        Text("I Have Seen \(title)")
+                        Text("I Have Seen \(movie.title)")
                     }
                 })
             }
             Section{
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    if newMovie{
+                        movieStorage.movies.append(movie)
+                    }else{
+                        for x in 0..<movieStorage.movies.count{
+                            if movieStorage.movies[x].id == movie.id{
+                                movieStorage.movies[x] = movie
+                                
+                            }
+                        }
+                    }
+                    self.presentationMode.wrappedValue.dismiss()
+                }){
                     HStack {
                         Spacer()
                         Text("Save")
                         Spacer()
                     }
-                })
+                }.disabled(movie.title.isEmpty)
+                
             }
         }.listStyle(GroupedListStyle())
         
@@ -73,6 +88,6 @@ struct MovieDetail: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetail()
+        MovieDetail(movie: Movie(title: "movie", rating: 5.0, seen: true), newMovie: true)
     }
 }
